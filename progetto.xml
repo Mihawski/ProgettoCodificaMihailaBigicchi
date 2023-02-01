@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="styleprolusioni.xsl"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+  <teiHeader> <!-- intestazione TEI obbligatoria -->
+    <fileDesc> <!-- descrizione file --> <!-- obbligatoria: presenta 3 elementi obbligatori e 4 facoltativi -->
+
+      <titleStmt> <!-- raggruppa informazioni sul titolo -->
+        <title xml:lang="fr" type="main"> Morphologie </title> <!-- titolo dell'opera/del manoscritto -->
+        <author ref="#FDS">Ferdinand de Saussure (1857-1913)</author> <!-- autore dell'opera/del manoscritto -->
+        <respStmt> <!-- fornisce una dichiarazione di responsabilità -->
+          <!-- Responsabilità del contenuto -->
+          <resp>Traduzione effettuata da:</resp> <!-- contiene una frase che dichiara la natura di responsabilità -->
+          <name xml:id="EmaF">Emanuele Fadda</name> <!-- nome proprio o frase nominale -->
+        </respStmt>
+      </titleStmt>
+
+      <editionStmt> <!-- (dichiarazione sull'edizione) raggruppa le informazioni riguardo una edizione di un testo. -->
+        <edition>
+               Edizione Digitale -
+          <date when="2022">Febbraio 2023</date> <!-- data in qualsiasi formato -->
+        </edition>
+        <respStmt> <!-- dichiarazione di responsabilità -->
+          <resp>Progetto sotto la guida di:</resp>
+          <name xml:id="AMarioDG">Angelo Mario Del Grosso</name>
+        </respStmt>
+        <respStmt>
+          <resp>Codifica del file realizzata da:</resp>
+          <name xml:id="KateB">Katerina Bigicchi </name>
+          <name xml:id="AndreM">Andrei Mihaila </name>
+        </respStmt>
+      </editionStmt>
+      
+      <publicationStmt> <!-- insieme di informazioni sulla pubblicazione -->
+        <publisher>Università di Pisa</publisher> <!-- fornisce il nome dell'organizzazione responsabile della pubblicazione -->
+        <pubPlace>Pisa, PI</pubPlace> <!-- luogo della pubblicazione -->
+        <address> <!-- indirizzo -->
+           <postCode>56127</postCode> <!-- codice postale -->
+            <name>Italia</name>
+        </address> 
+        <availability> <!-- informazioni sulla disponibilità di un testo -->
+          <p>Opera ad accesso libero</p> <!-- può contenere p al suo interno oppure ab o licence -->
+        </availability>
+        <date when="2023">2023</date> <!-- data in qualsiasi formato -->
+      </publicationStmt>
+
+      <sourceDesc> <!-- descrizione della fonte -->
+        <msDesc> <!-- contiene una descrizione di un singolo manoscritto identificabile o di un altro oggetto 
+        contenente testo, ad esempio un libro stampato in precedenza. -->
+          <msIdentifier> <!-- contiene l'informazione necessaria a identiifcare il manoscritto esaminato. Contenuto in msDesc -->
+            <country key="CH">Switzerland</country>
+            <settlement>Ginevra</settlement> <!-- contiene il nome di un insediamento, come una città, un comune -->
+            <repository role="library"> <!-- contiene il nome di un deposito, di una istituzione, all'interno della quale sono conservati i manoscritti -->
+                     Biblioteca di
+              <placeName ref="#ginevra">Ginevra</placeName>
+            </repository>
+          </msIdentifier>
+          <msContents> <!-- contenuto intellettuale del manoscritto -->
+            <msItem> <!-- descrive una singola opera o oggetto all'interno del contenuto intellettuale del manoscritto o di una sua parte -->
+              <title>Morphologie</title> <!-- titolo del manoscritto o comunque dell'opera -->
+              <byline>di<docAuthor>Ferdinand De Saussure,</docAuthor>linguista e semiologo svizzero.</byline> <!-- byline può essere utilizzato insieme a docAuthor -->
+              <textLang mainLang="fr">Scritto in lingua francese.</textLang> <!-- lingua che viene utilizzata all'interno del manoscritto, non confondesere con langUsage (contenuto in profileDesc)  che descrive le lingue, i dialetti i registri reappresentati all'interno di un testo -->
+              <docImprint>Ginevra,<docDate>1891</docDate></docImprint> <!-- informazioni sulla stampa del documento/manoscritto -->
+            </msItem>
+          </msContents>
+
+          <physDesc> <!-- descrizione fisica del manoscritto -->
+            <objectDesc form="folio"> <!-- contiene una descrizione delle componenti fisiche del manoscritto -->
+              <supportDesc material="paper"> <!-- descrivono il supporto della parte scritta di un manoscritto-->
+                <support>Fogli di carta,</support> <!-- contiene una descrizione dei materiali che costituiscono il supporto fisico della parte scritta di un manoscritto -->
+                <extent>19 fogli.</extent> <!-- mi indica che dimensione ha il manoscritto, il documento elettronico -->
+                <condition>Le pagine risultano parzialmente leggibili. Alcune parole, cancellate con una linea nel mezzo
+                oppure con un font più spesso, sono particolarmente difficili da leggere.</condition> <!-- condizione, stato attuale del manoscritto. Mi dice quali sono le condizioni fisiche del manoscritto-->
+              </supportDesc> <!-- supportDesc può contenere collation and foliation (tipo di numerazione delle pagine utilizzato nel manoscritto ) -->
+              <layoutDesc> <!-- contenuto all'interno di objectDesc contenuto in physDesc --> <!-- informazioni sul layout inerente il manoscritto -->
+                <layout columns="1" ruledLines="25"> <!-- Specifica il numero di righe per colonna -->
+                  <p>Le pagine hanno dalle 25 alle 30 righe (alcune righe sono composte solo da frecce).</p>
+                </layout>
+              </layoutDesc>
+            </objectDesc>
+            <handDesc hands="1"> <!-- Chi ha messo le mani (=scritto) sul documento -->
+              <p>Essendo preso dagli archivi di Ferdinand De Saussure, il testo sembrerebbe scritto totalmente da lui.</p>
+            </handDesc> <!-- può contenere p, ab, acquisition, origin, summary -->
+            <typeDesc> <!-- contiene una descrizione dei caratteri tipografici o di altri aspetti della stampa di un'incalcole o di un'altra fonte stampata. -->
+              <p>Il tipo di scrittura è simile al corsivo. Ci sono parole cancellate con una linea nel mezzo
+              e alcune parole sono ricalcate. </p>
+            </typeDesc>
+          </physDesc>
+
+          <history> <!-- raggruppa gli elementi che descrivono la storia completa di un manoscritto -->
+            <summary>Questo manoscritto si compone di una parte.</summary> <!-- contiene una panoramica delle informazioni inerenti la storia del manoscritto -->
+              <origin notAfter="1895"> <!-- contiene info relative all'origine del manoscritto o di una sua parte. Sicuramente non dopo il 1985 (specifica l'ultima data possibile ) -->
+                  <p>Gli appunti vennero scritti da <persName>Ferdinand De Saussure</persName>
+                     e vennero parzialmente presentati durante le prime tre lezioni (almeno) ai suoi studenti. 
+                    Si suppone che sia del periodo <date when="1893">1893</date>-<date when="1894">1894</date>,
+                    ma potrebbe risalire anche al <date when="1894">1894 </date>-<date when="1895">1895</date>.
+                    Questi appunti furono presi a <placeName>Ginvera</placeName>.</p>
+              </origin>
+              <acquisition> <!-- acquisizione --> <!-- contiene informazioni relative al processo di acquisizione di un manoscritto o di una sua parte -->
+                  <p>Il documento originale è tratto dalla Biblioteca di <placeName>Ginevra</placeName></p>
+              </acquisition>
+           </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+
+    <profileDesc> <!--descrizione del profilo del testo (linguaggi primari e secondari in particolare)-->
+      <langUsage> <!--  descrive lingue, registri, dialetti che vengono rappresentati nel testo. Non confondere con textLang che è la lingua utilizzata all'interno del manoscritto   -->
+        <language ident="fr">Francese</language> <!-- langUsage non va confuso con textLang -->
+      </langUsage>
+      <textDesc> <!-- (descrizione del testo) fornisce la descrizione di un testo in termini di paramentri situazionali -->
+        <channel mode="ws" /> <!-- (canale primario) descrive il mezzo o canale attraverso cui un testo è trasmesso o vissuto. 
+        Per un testo scritto potrebbe essere stampa, manoscritto, email, ecc.; per un testo parlato potrebbe essere 
+        radio, telefono, faccia a faccia, ecc.  WS = scritto per essere parlato --> 
+        <constitution type="single" /> <!-- descrive la composizione interna di un testo o di un campione di testo, ad esempio frammentario, completo. Single = un unico testo completo [Valore di default]-->
+        <derivation type="original" /> <!-- descrive la natura e il grado di originalità del manoscritto, testo o qualsiasi altro oggetto -->
+        <domain type="education" /> <!-- il dominio, contesto sociale per il quale il manoscritto è stato relizzato o a chi è destinato -->
+        <factuality type="fact" /> <!-- (factuality) quantifica quanto il testo possa essere considerato di invenzione o meno. Fact = vero-->
+        <interaction type="partial" active="singular" passive="group" /> <!-- Interazione. Partial = 
+        qualche grado di interazione, ad esempio un monologo con risposte stabilite. Singular = un singolo partecipante attivo
+        Group = il testo è indirizzato ad un numero indefinito, ma limitato di partecipanti, ad esempio una lezione-->
+        <preparedness type="draft" /> <!-- Preparazione: bozza -->
+        <purpose type="inform" degree="high" /> <!-- indica la funzione comunicativa del testo, il suo scopo -->
+      </textDesc>
+      <settingDesc>
+        <setting>
+          <name>
+          Testi registrati nella Biblioteca di
+            <placeName>Ginevra</placeName>, <!-- nome del luogo -->
+            <country>Svizzera</country>.
+          </name>
+          <time>
+            <date when="no-date"> Senza data </date> <!-- data in qualsiasi formato -->
+          </time>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+    
+  </teiHeader>
+
+  <facsimile> <!-- facsimile image-based --> <!-- si collegherà poi a usemap in html che permette di creare una mappa cliccabile che verrà poi richiamata in xsl -->
+    <surface n="1" xml:id="M_20">
+      <graphic url='img/ms_fr_03951_07_p020.jpg' xml:id="Pag20" width='462px' height='663px' />
+      <zone ulx="134" uly="18" lrx="446" lry="32" xml:id="P20_R1" />
+      <zone ulx="128" uly="39" lrx="459" lry="62" xml:id="P20_R2"/>
+      <zone ulx="134" uly="63" lrx="454" lry="76" xml:id="P20_R3" />
+      <zone ulx="136" uly="88" lrx="457" lry="105" xml:id="P20_R4"/>
+      <zone ulx="135" uly="111" lrx="447" lry="122" xml:id="P20_R5"/>
+      <zone ulx="56" uly="129" lrx="458" lry="142" xml:id="P20_R6"/>
+      <zone ulx="146" uly="154" lrx="390" lry="166" xml:id="P20_R7"/>
+      <zone ulx="176" uly="167" lrx="448" lry="192" xml:id="P20_R8"/>
+      <zone ulx="121" uly="197" lrx="450" lry="215" xml:id="P20_R9"/>
+      <zone ulx="123" uly="225" lrx="452" lry="242" xml:id="P20_R10"/>
+      <zone ulx="118" uly="248" lrx="285" lry="266" xml:id="P20_R11"/>
+      <zone ulx="170" uly="267" lrx="461" lry="284" xml:id="P20_R12"/>
+      <zone ulx="139" uly="290" lrx="456" lry="302" xml:id="P20_R13"/>
+      <zone ulx="137" uly="320" lrx="455" lry="337" xml:id="P20_R14"/>
+      <zone ulx="137" uly="338" lrx="447" lry="360" xml:id="P20_R15"/>
+      <zone ulx="140" uly="369" lrx="266" lry="392" xml:id="P20_R16"/>
+      <zone ulx="157" uly="393" lrx="330" lry="407" xml:id="P20_R17"/>
+      <zone ulx="246" uly="421" lrx="331" lry="453" xml:id="P20_R18"/>
+      <zone ulx="249" uly="466" lrx="331" lry="489" xml:id="P20_R19"/>
+      <zone ulx="149" uly="489" lrx="457" lry="522" xml:id="P20_R20"/>
+      <zone ulx="143" uly="523" lrx="449" lry="543" xml:id="P20_R21"/>
+      <zone ulx="180" uly="545" lrx="458" lry="566" xml:id="P20_R22"/>
+      <zone ulx="183" uly="568" lrx="457" lry="595" xml:id="P20_R23"/>
+      <zone ulx="250" uly="597" lrx="382" lry="617" xml:id="P20_R24"/>
+      <zone ulx="188" uly="610" lrx="451" lry="634" xml:id="P20_R25"/>
+      <zone ulx="122" uly="632" lrx="443" lry="649" xml:id="P20_R26"/>
+      <zone ulx="331" uly="650" lrx="435" lry="662" xml:id="P20_R27"/>
+    </surface>
+  </facsimile>
+
+  <facsimile> <!-- costituisce una rappresentazione digitale di una fonte con testo scritto espressa tramite immagini -->
+    <surface n="2" xml:id="M_21"> <!-- rappresenta una superficie scritta in termini di uno spazio rettangolare di coordinate -->
+      <graphic url='img/ms_fr_03951_07_p021.jpg' xml:id="Pag21" width='423px' height='668px' /> <!-- rappresenta graficamente lo spazio indicato -->
+        <zone ulx="116" uly="6" lrx="370" lry="34" xml:id="P21_R1"/> <!-- zone rappresenta un'area di interesse bidimensionale all'interno di surface -->
+        <zone ulx="100" uly="33" lrx="419" lry="55" xml:id="P21_R2" />
+        <zone ulx="95" uly="60" lrx="315" lry="77" xml:id="P21_R3"/>
+        <zone ulx="87" uly="79" lrx="346" lry="102" xml:id="P21_R4"/>
+        <zone ulx="74" uly="99" lrx="359" lry="121" xml:id="P21_R5"/>
+        <zone ulx="34" uly="121" lrx="422" lry="167" xml:id="P21_R6"/>
+        <zone ulx="71" uly="169" lrx="418" lry="191" xml:id="P21_R7"/>
+        <zone ulx="58" uly="194" lrx="415" lry="220" xml:id="P21_R8"/>
+        <zone ulx="63" uly="222" lrx="421" lry="245" xml:id="P21_R9"/>
+        <zone ulx="67" uly="248" lrx="419" lry="269" xml:id="P21_R10"/>
+        <zone ulx="73" uly="271" lrx="419" lry="296" xml:id="P21_R11"/>
+        <zone ulx="74" uly="297" lrx="420" lry="313" xml:id="P21_R12"/>
+        <zone ulx="89" uly="316" lrx="418" lry="343" xml:id="P21_R13"/>
+        <zone ulx="85" uly="342" lrx="422" lry="373" xml:id="P21_R14"/>
+        <zone ulx="85" uly="372" lrx="421" lry="391" xml:id="P21_R15"/>
+        <zone ulx="87" uly="396" lrx="420" lry="417" xml:id="P21_R16"/>
+        <zone ulx="91" uly="418" lrx="419" lry="437" xml:id="P21_R17"/>
+        <zone ulx="95" uly="437" lrx="414" lry="463" xml:id="P21_R18"/>
+        <zone ulx="3" uly="461" lrx="128" lry="630" xml:id="P21_R27"/>
+        <zone ulx="103" uly="464" lrx="411" lry="487" xml:id="P21_R19"/>
+        <zone ulx="135" uly="493" lrx="396" lry="513" xml:id="P21_R20"/>
+        <zone ulx="288" uly="517" lrx="413" lry="550" xml:id="P21_R21"/>
+        <zone ulx="153" uly="539" lrx="360" lry="568" xml:id="P21_R22"/>
+        <zone ulx="183" uly="572" lrx="419" lry="596" xml:id="P21_R23"/>
+        <zone ulx="163" uly="593" lrx="419" lry="611" xml:id="P21_R24"/>
+        <zone ulx="175" uly="616" lrx="419" lry="634" xml:id="P21_R25"/>
+        <zone ulx="235" uly="637" lrx="366" lry="661" xml:id="P21_R26"/>
+    </surface>
+  </facsimile>
+
+  <text xml:lang="fr" xml:id="text-fr" subtype="manuscript"> <!-- text molto spesso prende il posto di surface -->
+    <body> <!-- body è figlio di text può essere sostituito da group e in questo modo si ha un documento COMPOSITO -->
+
+      <!-- PAGINA 20 -->
+            
+        <div type="pagina" n="20"> <!-- pb e lb sono self-closing elements e servono per risolvere il problema delle gerarchie sovrapposte che sono i vincoli di un OHCO -->
+            <pb n="20" facs="#Pag20"/> <!-- page beginning -->
+              <ab type="pericope" n="1" xml:id="Per1_Pag20"> <!-- contenitore di testo, è un contenitore per frasi o elementi inter-livello (pericope nel nostro caso)-->
+                 <!-- line beginning è necessario utilizzarlo per le righe di testo da inserire all'interno di text -->
+                <lb facs="#P20_R1" n="1"/> <!-- @facs att.global.facs, elementi che possono essere associati ad una immagine o superficie all'interno di facsimile -->
+                  En comparant <choice><sic>cequi</sic><corr>ce qui </corr></choice> se passe dans 
+                
+                <lb facs="#P20_R2" n="2"/>
+                  le <term ref="#domainph">domaine phonétique</term>, vous apercevrez <!-- term = elemento terminologico -->
+
+                <lb facs="#P20_R3" n="3"/>
+                  d’une manière encore plus claire la
+              
+                <lb facs="#P20_R4" n="4"/>
+                  vérité de notre <term ref="#principe">principe</term> <del rend="overstrike">morphologie</del> <!-- cancellatura da parte dell'autore -->
+        
+                <lb facs="#P20_R5" n="5"/>
+                  qu’il n’y a jamais à se mouvoir,
+               
+                <lb facs="#P20_R6" n="6"/>
+                  en <abbr>morph<am>.</am></abbr><term ref="#morph"><expan>morph<ex>ologie</ex></expan></term>, qu’au sein d’une même <!-- abbreviazione ed espanzione della parola -->
+                  <term ref="#epoque">époque</term>; même 
+                
+                <lb facs="#P20_R7" n="7"/>
+                  <abbr>qd</abbr><expan>quand</expan> il s’agit des 
+                  <term ref="#changements">changements</term>.
+              </ab>
+            
+              <ab type="pericope" n="2" xml:id="Per2_Pag20"> <!-- seconda pericope -->
+                <lb facs="#P20_R8" n="8"/>
+                  On a pu comparer avec justesse
+            
+                <lb facs="#P20_R9" n="9"/>
+                  le <abbr>chang<am>.</am> phonétiq</abbr><term ref="#changementph"><expan>chang<ex>ement</ex></expan> <expan>phonetiq<ex>ue</ex></expan></term> à un escalier dont
+              
+                <lb facs="#P20_R10" n="10"/>
+                  les marches s’écrouleraient à mesure
+              
+                <lb facs="#P20_R11" n="11"/>
+                  qu’on les gravit.
+              </ab>
+            
+              <ab type="pericope" n="3" xml:id="Per3_Pag20"> <!-- terza pericope -->
+                <lb facs="#P20_R12" n="12"/>
+                  Pour que
+                  <hi rend="underline"><foreign xml:lang="gr">k2oteros</foreign></hi> devienne <!-- hi rend underline specifica che quella parola è sottolineata -->
+                  <hi rend="underline"><foreign xml:lang="gr">kwoteros</foreign></hi>,
+
+                <lb facs="#P20_R13" n="13"/>
+                  il faut que 
+                  <hi rend="underline"><foreign xml:lang="gr">k2oteros</foreign></hi> cesse, <del rend="overstrike">d'etri</del> de
+          
+                <lb facs="#P20_R14" n="14"/>
+                  vivre; pour que <hi rend="underline"><foreign xml:lang="gr">kwoteros</foreign></hi> arrive à 
+                 <!-- rend indica come l'elemento viene visualizzato o comunque rappresentato nel testo originale -->
+  
+                <lb facs="#P20_R15" n="15"/>
+                  <abbr>etr</abbr><expan>êtr<ex>e</ex></expan> 
+                  <foreign xml:lang="gr">πότερος</foreign>, il faut que <hi rend="underline">kwoteros</hi>
+            
+                <lb facs="#P20_R16" n="16"/>
+                  disparaisse.
+              </ab>
+            
+              <ab type="pericope" n="4" xml:id="Per4_Pag20"> <!-- quarta pericope -->
+                <lb facs="#P20_R17" n="17"/>
+                  Écrivons: <foreign xml:lang="gr">k2oters</foreign> <!-- foreign= parola straniera -> esempio linguistico -->
+       
+                <lb facs="#P20_R18" n="18"/>
+                  <foreign xml:lang="gr">kwoteros</foreign>
+              
+                <lb facs="#P20_R19" n="19"/>
+                  <foreign xml:lang="gr">πότερος</foreign>
+              </ab>
+
+              <ab type="pericope" n="5" xml:id="Per5_Pag20"> <!-- quinta pericope -->
+                <lb facs="#P20_R20" n="20"/>
+                  <term ref="#changmorph">Changement morphologique</term>: <abbr>NS</abbr><expan>nous</expan> ne pouvons
+          
+                <lb facs="#P20_R21" n="21"/>
+                  écrire <hi rend="underline">Ni</hi>: <foreign xml:lang="gr">toi klutōs</foreign> <!-- emph o hi -->
+            
+                <lb facs="#P20_R22" n="22"/>
+                  <foreign xml:lang="gr">τοί ϰλυτοί</foreign> (absurde),
+               
+                <lb facs="#P20_R23" n="23"/>
+                  Ni: <foreign xml:lang="gr">toi klutōs</foreign>
+               
+                <lb facs="#P20_R24" n="24"/>
+                  <foreign xml:lang="gr">τοί ϰλυτοί</foreign>,
+              
+                <lb facs="#P20_R25" n="25"/>
+                  <choice><sic>carce</sic><corr>car ce</corr></choice> n'est <abbr>evid.</abbr><expan>evid<ex>emment</ex></expan>
+                  pas le toi <choice><sic>dela</sic><corr>de la</corr></choice>
+            
+                <lb facs="#P20_R26" n="26"/>
+                  <abbr>gener.</abbr><term ref="génération"><expan>gener<ex>ation</ex></expan></term> 
+                  <abbr>prec.</abbr><expan>préc<ex>édente</ex></expan> qui a <supplied resp="#EF" reason="omitted-in-original">[engendré ϰλυτοί]</supplied>. Il faut écrire: <!-- supplied reason omitted in original mi dice che c'è una evidente omissione da parte dell'autore o del copista -->
+                  <foreign xml:lang="gr">toi klutōs</foreign>
+  
+                <lb facs="#P20_R27" n="27"/>
+                  <foreign xml:lang="gr">τοί ϰλυτοί</foreign>.
+              </ab>
+        </div>
+
+      <!-- PAGINA 21 -->
+
+        <div type="pagina" n="21">
+            <pb n="21" facs="#Pag21"/> <!-- page beginning -->
+              <ab type="pericope" n="1" xml:id="Per1_Pag21"> <!-- contenitore di testo (pericope nel nostro caso)-->
+                <lb facs="#P21_R1" n="1"/>
+                  Autre <hi rend="bold"><abbr>ex.</abbr><expan>ex<ex>emple</ex></expan></hi> de <term ref="#changmnt">changement</term>
+  
+                <lb facs="#P21_R2" n="2"/>
+                  consistant en une <term ref="#création">création nouvelle</term>
+          
+                <lb facs="#P21_R3" n="3"/>
+                  <hi rend="bold"><abbr>substit<am>.</am></abbr><expan>substit<ex>uée</ex></expan></hi> à l’ancienne:
+  
+                <lb facs="#P21_R4" n="4"/>
+                  <abbr>Nom<am>.</am></abbr><term ref="#nominatif"><expan>Nom<ex>inatif</ex></expan></term> 
+                  <abbr>pl<am>.</am></abbr><term ref="#pluriel"><expan>pl<ex>uriel</ex></expan></term> 
+                  <abbr>Pron<am>.</am></abbr><term ref="#pronom"><expan>Pron<ex>om</ex></expan></term> 
+                  <abbr>Adj<am>.</am></abbr><term ref="#adjectif"><expan>Adj<ex>ectif</ex></expan></term> 
+                  <abbr>Subst<am>.</am></abbr><term ref="substantif"><expan>Subst<ex>antif</ex></expan></term>
+    
+                <lb facs="#P21_R5" n="5"/>
+                  <lang><abbr>I<am>.</am>Eur<am>.</am></abbr><term ref="#IndoEur"><expan>I<ex>ndo</ex></expan>-<expan>Eur<ex>opeen</ex></expan></term></lang>
+                  <foreign xml:lang="gr">toi klutōs ek1wōs</foreign>
+        
+                <lb facs="#P21_R6" n="6"/>
+                  <lang><abbr>Goth<am>.</am></abbr><term ref="#gothique"><expan>Goth<ex>ique</ex></expan></term></lang> <foreign>ƥai hlūdai wulfōs</foreign>
+                  <lang><supplied resp="#EF" reason="omitted-in-original">Grec</supplied></lang> <foreign xml:lang="gr">τοί ϰλυτοί ἵπποι</foreign> <!-- reason omissis sta ad inidcare che la parola non è stata scritta, ma la ritroviamo nella trascrizione -->
+              </ab>
+
+              <ab type="pericope" n="2" xml:id="Per2_Pag21"> <!-- contenitore di testo (pericope nel nostro caso)-->
+                <lb facs="#P21_R7" n="7"/>
+                  La final - <hi rend="underline">oi</hi> <del rend="overstrike">
+                  <gap reason="illeggibile" unit="chars"/></del>
+          
+                <lb facs="#P21_R8" n="8"/>
+                  <del rend="overstrike"><gap reason="illeggibile" unit="chars"/></del> d’abord propre au
+      
+                <lb facs="#P21_R9" n="9"/>
+                  <term ref="#pronom">pronome</term>, a gagné en 
+                  <lang><abbr>germ<am>.</am></abbr><term ref="#germanique"><expan>germani<ex>que</ex></expan></term></lang> l’
+                  <abbr>adj<am>.</am></abbr><term ref="#adjectif"><expan>adj<ex>ectif</ex></expan></term>, en
+          
+                <lb facs="#P21_R10" n="10"/>
+                  <lang><term ref="#grec">grec</term></lang> l’
+                  <abbr>adj<am>.</am></abbr><term ref="#adjectif"><expan>adj<ex>ectif</ex></expan></term> et le <abbr>subst<am>.</am></abbr><term ref="#substantif"><expan>subst<ex>antif</ex></expan></term>. <del rend="overstrike">tòv:toi</del>,
+              </ab>
+
+              <ab type="pericope" n="3" xml:id="Per3_Pag21"> <!-- contenitore di testo (pericope nel nostro caso)-->
+                <lb facs="#P21_R11" n="11"/>
+                <del rend="overstrike"><foreign xml:lang="gr">ϰλυτοv</foreign>:<foreign xml:lang="gr">ϰλυτοί</foreign> etc... Tamlis pue</del>
+        
+                <lb facs="#P21_R12" n="12"/>
+                  <del rend="overstrike">princip: <foreign xml:lang="gr">τοm</foreign>:<foreign xml:lang="gr">τοί</foreign> <foreign xml:lang="gr">klutōi</foreign>:<foreign xml:lang="gr">klutōs</foreign></del>.
+      
+                <lb facs="#P21_R13" n="13"/>
+                  Il est évident que ce n’est pas de
+    
+                <lb facs="#P21_R14" n="14"/>
+                  <hi rend="underline"><foreign>klutōs</foreign></hi> qu’est parti le <term ref="#changement">changement</term> qui
+      
+                <lb facs="#P21_R15" n="15"/>
+                  <add resp="#FDS" place="margin">à saplici</add>
+                  a donné <supplied resp="#EF" reason="omitted-in-original">[a sa place]</supplied> <foreign xml:lang="gr">ϰλυτοί</foreign>. <del rend="overstrike"><gap reason="illeggibile" unit="chars"/></del>
+              </ab>
+
+              <ab type="pericope" n="4" xml:id="Per4_Pag21"> <!-- contenitore di testo (pericope nel nostro caso)-->
+                <lb facs="#P21_R16" n="16"/>
+                  <del rend="overstrike">formè contempopraine</del> La 
+                  <abbr>formati</abbr><term ref="#formation"><expan>formati<ex>on</ex></expan></term>
+    
+                <lb facs="#P21_R17" n="17"/>
+                  <foreign xml:lang="gr">ϰλυτοί</foreign>, conduit tout de suite
+        
+                <lb facs="#P21_R18" n="18"/>
+                  à <del rend="overstrike">una</del> la <term ref="#recherche">recherche</term> d’autres formes,
+    
+                <lb facs="#P21_R19" n="19"/>
+                  et de <term ref="#formesc">formes <hi rend="underline">contemporaines</hi></term>; 
+                  <del rend="overstrike"><gap reason="illeggibile" unit="chars"/></del> <!-- gap o unclear -->
+  
+  
+                <lb facs="#P21_R20" n="20"/>
+                - 
+                <foreign xml:lang="gr">τον</foreign>: <foreign xml:lang="gr">τοί</foreign> = <foreign xml:lang="gr">ϰλυτόν</foreign> : x ; 
+
+                <lb facs="#P21_R21" n="21"/>
+                  x = <foreign xml:lang="gr">ϰλυτοί</foreign>.
+              </ab>
+
+              <ab type="pericope" n="5" xml:id="Per5_Pag21"> <!-- contenitore di testo (pericope nel nostro caso)-->
+                <lb facs="#P21_R22" n="22"/>
+                  <del rend="overstrike"><gap reason="illeggibile" unit="chars"/></del> <!-- parola cancellata o frase cancellata e illeggibile -->
+  
+                <lb facs="#P21_R23" n="23"/>
+                  La <term ref="#langue">langue</term> a donc dû recourir
+      
+                <lb facs="#P21_R24" n="24"/>
+                  à un ensemble de <term ref="#formes">formes</term>
+  
+                <lb facs="#P21_R25" n="25"/>
+                  simultanées pour arriver
+  
+                <lb facs="#P21_R26" n="26"/>
+                  à cette <term ref="#création">création</term>.
+
+                  <lb facs="#P21_R27" n="27"/>
+                  <add resp="#FDS" place="margin"> ce n’est pas l’
+                  <abbr>epoq<am>.</am></abbr><term ref="#epoque"><expan>epoq<ex>ue</ex></expan></term> anterieure qui intervient, c’est 
+                  <abbr>uniq<am>.</am></abbr><expan>uniq<ex>uement</ex></expan> l’
+                  <abbr>epoq<am>.</am></abbr><term ref="#epoquee"><expan>epoq<ex>ue</ex></expan></term> 
+                  meme de sa <abbr>format</abbr><expan>format<ex>ion</ex></expan> </add>. <!-- annotazione margine sx -->
+              </ab>
+        </div>
+
+
+      <!-- traduzione pagina 20 e pagina 21 di ciascuna pericope -->
+                
+        <div type="traduzione" n="1">
+        
+          <ab n="1" corresp="#Per1_Pag20" xml:lang="it">
+          
+            Mettendo a paragone ciò che accade nel dominio fonetico, vi accorgerete in un modo ancora più chiaro della verità del nostro principio,
+            che non ci si deve muovere, in morfologia, se non in seno a una stessa epoca, anche quando si tratta di cambiamenti.
+          
+          </ab>
+
+          <ab n="2" corresp="#Per2_Pag20" xml:lang="it">
+            Si è potuto giustamente paragonare il cambiamento fonetico a una scala in cui i gradini si distruggono man mano che li si sale. 
+          </ab>
+
+          <ab n="3" corresp="#Per3_Pag20" xml:lang="it">
+            Perché k2oteros divenga kwoteros, bisogna che k2oteros cessi di vivere; perché kwoteros arrivi a essere πότερος  bisogna che kwoteros scompaia.
+          </ab>
+
+          <ab n="4" corresp="#Per4_Pag20" xml:lang="it">
+            Scriviamo: 
+            k2oteros 
+            kwoteros 
+            πότερος.
+          </ab>
+
+          <ab n="5" corresp="#Per5_Pag20" xml:lang="it">
+            Cambiamento morfologico: non possiamo scrivere nè 
+            toi klutos
+            τοί κλυτοί (absurde),
+            nè toi klutōs
+            τοί κλυτοί
+            Perché evidentemente non è il  τοί della generazione precedente che ha [generato κλυτοί].
+            Bisogna scrivere:
+            toi klutōs
+            τοί κλυτοί
+          </ab>
+        </div>
+
+        <div type="traduzionep" n="2">
+          <ab n="1" corresp="#Per1_Pag21" xml:lang="it">
+            Altro esempio di cambiamento consistente in una 
+            creazione nuova sostituita a quella vecchia: 
+            Nominativo plurale Pronome Aggettivo Sostantivo
+            Indoeuropeo toi klutōs ek1wōs
+            Gotico ƥai hlūdai wulfōs
+            Greco τοί κλυτοί ἵπποι
+          </ab>
+
+          <ab n="2" corresp="#Per2_Pag21" xml:lang="it">
+            La finale -oi, all’inizio propria del pronome, ha conquistato in germanico l’aggettivo, in greco
+            l’aggettivo e il sostantivo.
+          </ab>
+
+          <ab n="3" corresp="#Per3_Pag21" xml:lang="it">
+            È evidente che non è da *klutōs che è partito il cambiamento che ha dato
+            al suo posto κλυτοί. 
+          </ab>
+
+          <ab n="4" corresp="#Per4_Pag21" xml:lang="it">
+            La formazione κλυτοί conduce subito a una ricerca d’altre forme, e di forme 
+            contemporanee; non è l’epoca anteriore a intervenire, è solo l’epoca medesima della sua 
+            formazione: 
+            τον: τοί = κλυτόν : x ; 
+            x = κλυτοί
+          </ab>
+
+          <ab n="5" corresp="#Per5_Pag21" xml:lang="it">
+            La lingua ha dunque dovuto ricorrere a un insieme di forme 
+            simultanee per arrivare a tale creazione.
+          </ab>
+
+        </div>
+
+    </body>
+
+
+      <!--Note, bibliografia, listPerson, listPlace, glossario, listOrganizations-->
+
+      <!-- Note -->
+
+
+      <!-- Bibliografia -->
+      <back> <!-- materiale che segue il testo ed è figlio di text, come body, front, group che può prendere il posto di body e avere un DOCUMENTO COMPOSITO -->
+        <div type="addList">
+          <listBibl>
+            <bibl xml:id="corsoDiLing">
+              <author ref="#FDS">
+                <forename>Ferdinand</forename>
+                <surname>De Saussure</surname>
+              </author>
+              <author xml:id="TDM">
+                <forename>Tullio</forename>
+                <surname>De Mauro</surname>
+              </author>
+              <title type="main">Corso di linguistica generale</title>
+              <title type="sub">Introduzione, traduzione e commento di Tullio De Mauro</title>
+              <pubPlace>
+                <placeName xml:id="Rm">Roma</placeName>
+              </pubPlace>
+              <pubPlace>
+                <placeName xml:id="Br">Bari</placeName>
+              </pubPlace>
+              <date when="1976">1976</date>
+              <publisher>Editori Laterza</publisher>
+            </bibl>
+
+            <bibl xml:id="CFS62" xml:lang="french" source="https://www.jstor.org/stable/41427851?seq=1#metadata_info_tab_contents">
+              <author xml:id="AC">
+                <forename>Alessandro</forename>
+                <surname>Chidichimo</surname>
+              </author>
+                <title>Cahiers <persName ref="#FDS">Ferdinand de Saussure</persName></title>
+                <pubPlace ref="#GN">
+                  <placeName ref="#GN">Ginevra</placeName>
+                </pubPlace>
+                <publisher>Librairie Droz</publisher>
+                <date when="2009">2009</date>
+            </bibl>
+          </listBibl>
+
+
+          <!-- listPerson -->
+
+          <listPerson>
+            <head>Persone</head>
+
+              <person xml:id="FdS"> 
+                <persName role="author">
+                  <forename>Ferdinand</forename>
+                  <surname>de Saussure</surname>
+                </persName>
+                  <occupation> linguistic </occupation> <!-- occupazione o comunque progessione che svolge quella specifica persona -->
+                  <sex>M</sex>
+                  <birth>
+                    <date when="1857-11-26">26th November 1857</date>
+                    <placeName ref="#GE">
+                      <settlement type="municipality">Genève</settlement>
+                      <settlement type="department" key="GE">Genève</settlement>
+                      <country key="CH">Switzerland</country> <!-- contiene nome di una entità geopolitica come nazione, paese, colonia -->
+                    </placeName>
+                  </birth>
+                <death>
+                  <date when="1913-02-22">22nd February 1913</date>
+                    <placeName ref="#VlC">
+                      <settlement type="municipality">Vufflens-le-Château</settlement>
+                      <settlement type="canton" key="Vaud">Vaud</settlement>
+                      <country key="CH">Svizzera</country>
+                    </placeName>
+                  </death> 
+              </person>
+
+              <person xml:id="AM"> 
+                <persName> 
+                  <forename>Andrei</forename>
+                  <surname>Mihaila</surname>
+                </persName>
+                <sex>M</sex>
+                <birth>
+                  <date when="21-03-2000">21st March 2000</date>
+                  <placeName ref="#LI">
+                    <settlement type="municipality">Livorno</settlement>
+                    <settlement type="provincia" key="BN">Livorno</settlement>
+                    <country key="IT">Italy</country>
+                  </placeName>
+                </birth>
+              </person>
+
+              <person xml:id="KB"> 
+                <persName> 
+                  <forename>Katerina</forename>
+                  <surname>Bigicchi</surname>
+                </persName>
+                <sex>F</sex>
+                <birth>
+                  <date when="15-11-2000">15th November 2000</date>
+                  <placeName ref="#LU">
+                    <settlement type="municipality">Lucca</settlement>
+                    <settlement type="provincia" key="BN">Lucca</settlement>
+                    <country key="IT">Italy</country>
+                  </placeName>
+                </birth>
+              </person>
+
+              <person xml:id="EF"> 
+                <persName> 
+                  <forename>Emanuele</forename>
+                  <surname>Fadda</surname>
+                </persName>
+                <sex>M</sex>
+                <birth>
+                  <date when="1972">1972</date>
+                  <placeName ref="#CA">
+                    <settlement type="municipality">Cagliari</settlement>
+                    <settlement type="provincia" key="BN">Cagkiari</settlement>
+                    <country key="IT">Italy</country>
+                  </placeName>
+                </birth>
+              </person>
+
+              <person xml:id="AMDG"> 
+                <persName> 
+                  <forename>Angelo</forename>
+                  <forename>Mario</forename>
+                  <surname>Del Grosso</surname>
+                </persName>
+                <sex>M</sex>
+                <birth>
+                  <date when="1980-02-19">19th February 1980</date>
+                  <placeName ref="#BN">
+                    <settlement type="municipality">Benevento</settlement>
+                    <settlement type="provincia" key="BN">Benevento</settlement>
+                    <country key="IT">Italy</country>
+                  </placeName>
+                </birth>
+              </person>
+          </listPerson>
+
+
+          <!-- listPlace -->
+
+          <listPlace>
+              <head>Luoghi</head>
+
+              <place xml:id="GN">
+                  <placeName ref="https://www.treccani.it/enciclopedia/ginevra/">Ginevra</placeName>
+                  <settlement>Ginevra</settlement>
+                  <country>Svizzera</country>
+              </place>
+
+              <place xml:id="Livorno">
+                <placeName ref="https://www.treccani.it/enciclopedia/livorno/">Livorno</placeName>
+                    <settlement>Toscana</settlement>
+                    <country>Italia</country>
+              </place>
+
+              <place xml:id="Lucca">
+                  <placeName ref="https://www.treccani.it/enciclopedia/lucca/">Lucca</placeName>
+                  <settlement>Toscana</settlement>
+                  <country>Italia</country>
+              </place>
+
+              <place xml:id="Roma">
+                  <placeName ref="https://www.treccani.it/enciclopedia/roma/">Roma</placeName>
+                  <settlement>Lazio</settlement>
+                  <country>Italia</country>
+              </place>
+              
+              <place xml:id="Pisa">
+                  <placeName ref="https://www.treccani.it/enciclopedia/pisa/">Pisa</placeName>
+                  <settlement>Toscana</settlement>
+                  <country>Italia</country>
+              </place>
+
+              <place xml:id="Bari">
+                  <placeName ref="https://www.treccani.it/enciclopedia/bari/">Bari</placeName>
+                  <settlement>Puglia</settlement>
+                  <country>Italia</country>
+              </place>
+
+              <place xml:id="Cagliari">
+                  <placeName ref="https://www.treccani.it/enciclopedia/cagliari/">Cagliari</placeName>
+                  <settlement>Sardegna</settlement>
+                  <country>Italia</country>
+              </place>
+
+              <place xml:id="Benevento">
+                  <placeName ref="https://www.treccani.it/enciclopedia/roma/">Benevento</placeName>
+                  <settlement>Campania</settlement>
+                  <country>Italia</country>
+              </place>
+
+              
+          </listPlace>
+
+          <!-- Glossario con spiegazione terminologie -->
+          <!-- Glossario pagina 20 -->
+
+          
+        </div>
+     
+
+      
+        <div type="glossario">
+
+          <list type="terminology"> <!-- lista -->
+            <label> <!-- label è l'etichetta della lista -->
+              <term xml:id="domaineph" xml:lang="fr">Domain phonetique,</term>
+              <term ref="#domaineph" xml:lang="it">Dominio fonetico</term>
+            </label>
+            <item> <!-- item è l'elemento della lista -->
+              <gloss target="#domaineph" xml:lang="it" source="https://www.treccani.it/vocabolario/fonetica/">
+                La <hi rend="bold">fonetica</hi> nella linguistica tradizionale è il ramo della scienza linguistica che studia i fonemi, o suoni articolati
+                dall'apparato di fonazione umano.
+              </gloss> <!-- gloss è la spiegazione inerente un determinato termine -->
+            </item>
+
+            <label>
+              <term xml:id="principe" xml:lang="fr">principe</term>
+              <term ref="#principe" xml:lang="it">principio</term>
+            </label>
+            <item>
+              <gloss target="#principe" xml:lang="it" source="https://it.wikipedia.org/wiki/Principio">
+                Un <hi rend="bold">principio</hi> è un concetto che indica le basi e i presupposti iniziali su cui si basa o poggia una teoria e che assumono,,
+                per convenzione o riconosciuto diritto, validità generale ed universale all'interno della teoria stessa.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="morph" xml:lang="fr">morphologie</term>
+              <term ref="#morph" xml:lang="it">morfologia</term>
+            </label>
+            <item>
+              <gloss target="#morph" xml:lang="it" source="https://it.wikipedia.org/wiki/Morfologia_(linguistica)">
+                La <hi rend="bold">morfologia</hi> è la parte della grammatica o della linguistica che ha per ogetto lo studio della <hi rend="bold">struttura grammaticale
+                delle parole</hi> e che ne stabilisce la classificazione e l'appartenenza a determinate categorie come il nome, il verbo, l'aggettivo e le forme della flessione,
+                come la coniugazione per i verbi e la declinazione per i nomi distinguendosi dalla fonologia, dalla sintassi e dal lessico.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="epoque" xml:lang="fr">èpoque</term>
+              <term ref="#epoque" xml:lang="it">epoca</term>
+            </label>
+            <item>
+              <gloss target="#epoque" xml:lang="it" source="https://www.treccani.it/vocabolario/epoca_res-d66ae6c4-dfef-11eb-94e0-00271042e8d9/">
+                L' <hi rend="bold">epoca</hi> è un punto fisso nella storia, segnato da un avvenimento memorabile, da cui si comincia a contare una nuova serie di annotazione.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="changements" xml:lang="fr">changements</term>
+              <term ref="#changements" xml:lang="it">cambiamenti</term>
+            </label>
+            <item>
+              <gloss target="#changements" xml:lang="it" source="https://www.garzantilinguistica.it/ricerca/?q=cambiamento">
+                Per <hi rend="bold">cambiamento</hi> si intende il cambiare o il cambiarsi, trasformazione, modifica, cambiamento di scena o cambiamento di stato.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="changementph" xml:lang="fr">changement phonétique</term>
+              <term ref="#changementph" xml:lang="it">cambiamento fonetico</term>
+            </label>
+            <item>
+              <gloss target="#changementph" xml:lang="it" source="https://www.docsity.com/it/il-mutamento-fonetico-e-fonologico/2625601/">
+                Per <hi rend="bold">cambiamento fonetico</hi> si intende la modificazione di un fono in un dato contesto (da un punto di vista articolatorio).
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="changmorph" xml:lang="fr">Changement morphologique</term>
+              <term ref="#changmorph" xml:lang="it">Cambiamento morfologico</term>
+            </label>
+            <item>
+              <gloss target="#changmorph" xml:lang="it" source="https://www.dir.uniupo.it/pluginfile.php/91001/mod_resource/content/1/MUTAMENTO_MORFOLOGICO.pdf">
+                Il <hi rend="bold">cambiamento morfologico</hi> è caratterizzabile in maniera efficace come un cambiamento sistematico di struttura linguistica.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="génération" xml:lang="fr">génération</term>
+              <term ref="#génération" xml:lang="it">generazione</term>
+            </label>
+            <item>
+              <gloss target="#génération" xml:lang="it" source="https://it.wikipedia.org/wiki/Generazione">
+                In sociologia, il termine <hi rend="bold">generazione</hi> identifica un insieme di persone che è vissuto nello stesso periodo ed è stato esposto
+                ad eventi che l'hanno caratterizzato.
+              </gloss>
+            </item>
+
+            <!-- Glossario pagina 21 -->
+
+            <label>
+              <term xml:id="changmnt" xml:lang="fr">changement</term>
+              <term ref="#changmnt" xml:lang="it">cambiamento</term>
+            </label>
+            <item>
+              <gloss target="#changmnt" xml:lang="it" source="https://dizionaripiu.zanichelli.it/cultura-e-attualita/definizionidautore/cambiamento/">
+                <hi rend="bold">Cambiamento</hi> è il fenome più importante della storia umana e della storia naturale. A torto il termine viene adoperato come sinonimo
+                di "progresso", forse per effetto di alcune filosofie ottimistiche smentite in modo fattuale dai disastri verificatisi, nella condizione umana e nel
+                dissesto ambientale, al passaggio dal XX al XXI secolo.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="créat" xml:lang="fr">création nouvelle</term>
+              <term ref="#créat" xml:lang="it">creazione nuova</term>
+            </label>
+            <item>
+              <gloss target="#création" xml:lang="it" source="https://it.wikipedia.org/wiki/Nuova_creazione">
+                Il concetto di <hi rend="bold">nuova creazione</hi> o nuova creatura ricorre nella Bibbia e nella teologia cristiana per riferirsi ad una nuova opera 
+                creativa di Dio che sarà realizzata quando giungerà a termine la realtà che noi oggi conosciamo. 
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="nominatif" xml:lang="fr">Nominatif</term>
+              <term ref="#nominatif" xml:lang="it">Nominativo</term>
+            </label>
+            <item>
+              <gloss target="#nominatif" xml:lang="it" source="https://it.wikipedia.org/wiki/Nominativo">
+                Il <hi rend="bold">nominativo</hi> è un caso della declinazione di diverse lingue antiche e moderne. Esso viene normalmente usato per inidcare
+                il soggetto che compie l'azione.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="pluriel" xml:lang="fr">pluriel</term>
+              <term ref="#pluriel" xml:lang="it">plurale</term>
+            </label>
+            <item>
+              <gloss target="#pluriel" xml:lang="it" source="">
+                Che si riferisce a più persone o cose, che indica o esprime il concetto della molteplicità. E' termine usato esclusivamente in linguistica e grammatica,
+                in quanto costituisce un aspetto della categoria grammaticale del numero che, contrapposto al singolar, indica che le persone o le cose sono più di una.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="pronom" xml:lang="fr">Pronom</term>
+              <term ref="#pronom" xml:lang="it">Pronome</term>
+            </label>
+            <item>
+              <gloss target="#pronom" xml:lang="it" source="https://www.treccani.it/enciclopedia/pronomi_(La-grammatica-italiana)">
+                Il <hi rend="bold">pronome</hi> è una parte variabile del discorso che si usa al posto di un altro elemento della frase, di solito il nome.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="adjectif" xml:lang="fr">Adjectif</term>
+              <term ref="#adjectif" xml:lang="it">Aggettivo</term>
+            </label>
+            <item>
+              <gloss target="#adjectif" xml:lang="it" source="https://www.treccani.it/enciclopedia/aggettivi_%28La-grammatica-italiana%29/">
+                L'<hi rend="bold">aggettivo</hi> è una parte variabile del discorso che esprime gli attributi di qualità, quantità ecc. della persona o della cosa indicata
+                dal sostantivo cui si riferisce.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="substantif" xml:lang="fr">Substantif</term>
+              <term ref="#substantif" xml:lang="it">Sostantivo</term>
+            </label>
+            <item>
+              <gloss target="#substantif" xml:lang="it" source="https://it.wikipedia.org/wiki/Sostantivo">
+                Il <hi rend="bold">sostanmtivo</hi> è la parte variabile del discorso che indica una persona, un luogo, una cosa o, più in generale
+                qualsiasi entità animata, inanimata o immaginata. 
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="Indoeur" xml:lang="fr">Indo-européen</term>
+              <term ref="#Indoeur" xml:lang="it">Indoeuropeo</term>
+            </label>
+            <item>
+              <gloss target="#Indoeur" xml:lang="it" source="https://www.garzantilinguistica.it/ricerca/?q=indoeuropeo">
+                Si dice di un gruppo di lingue europee e asiatiche che hanno in comune caratteri tali da giustificare l'ipotesi che in età antica fossero intimamente legate
+                fra loro e risalissero a una lingua unitaria: il latino, il greco, il sanscrito, sono lingue indoeuropee. 
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="gothique" xml:lang="fr">Gothique</term>
+              <term ref="#gothique" xml:lang="it">Gotico</term>
+            </label>
+            <item>
+              <gloss target="#gothique" xml:lang="it" source="https://www.treccani.it/vocabolario/gotico/">
+                Lingua appartenente al ramo orientale del gruppo linguistico germanico, nota soprattutto da una traduzione della Bibbia compiuta nel 4° secolo.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="germanique" xml:lang="fr">germanique</term>
+              <term ref="#germanique" xml:lang="it">germanico</term>
+            </label>
+            <item>
+              <gloss target="#germanique" xml:lang="it" source="https://www.grandidizionari.it/Dizionario_Italiano/parola/G/germanico.aspx">
+                Lingue germaniche, grande gruppo di lingue indoeuropee, a cui appartengono oggi le lingue scandinave e il tedesco, il lussemburghese, l'alemanno,
+                il neerlandese, il frisone e l'inglese.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="formation" xml:lang="fr">formation</term>
+              <term ref="#formation" xml:lang="it">formazione</term>
+            </label>
+            <item>
+              <gloss target="#formation" xml:lang="it" source="https://www.garzantilinguistica.it/ricerca/?q=formazione">
+                Il formare, il formarsi, l'essere formato; modo in cui qualcosa si forma o si è formata |
+                formazione delle parole: insieme delle regole e delle trasfromazioni proprie di una lingua che permettono di passare
+                da parole di base ad altre con un processo di composizione o con l'aggiunta di affissi.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="recherche" xml:lang="fr">recherche</term>
+              <term ref="#recherche" xml:lang="it">ricerca</term>
+            </label>
+            <item>
+              <gloss target="#richerche" xml:lang="it" source="https://dizionari.repubblica.it/Italiano/R/ricerca.html">
+                Nel campo degli studi, attività di indagine, di studio sistematico per approfondire, chiarire, verificare leggi o teorie, scoprire fatti 
+                o fenomeni nuovi intorno ad una particolare disciplina. 
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="formesc" xml:lang="fr">formes contemporaines</term>
+              <term ref="#formesc" xml:lang="it">forme contemporanee</term>
+            </label>
+            <item>
+              <gloss target="#formesc" xml:lang="it" source="https://www.merriam-webster.com/dictionary/contemporary#:~:text=%3A%20living%20or%20occurring%20at%20the,the%20present%20time%20%3A%20modern%2C%20current"> 
+                Le <hi rend="bold">forme contemporanee</hi> sono forme segnate dalle caratteristiche del periodo attuale, quindi si intendono forme moderne, attuali.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="epoquee" xml:lang="fr">epoque</term>
+              <term ref="#epoquee" xml:lang="it">epoca</term>
+            </label>
+            <item>
+              <gloss target="#epoquee" xml:lang="it" source=""> 
+                L'<hi rend="bold">epoca</hi> è lo spazio di tempo compreso tra due eventi storici; momento strico caratterizzato da grandi avvenimenti.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="langue" xml:lang="fr">langue</term>
+              <term ref="#langue" xml:lang="it">lingua</term>
+            </label>
+            <item>
+              <gloss target="#langue" xml:lang="it" source="https://www.treccani.it/vocabolario/langue/"> 
+                Nella linguistica di F. de Saussure e delle scuole che ne derivano, il termine designa la lingua, ossia il linguaggio, come insieme di
+                sistemni collegati gli uni agli agli altri, i cui elementi hanno valore soltanto nelle relazioni di equivalenza o di opposizione che li collegano;
+                la <hi rend="bold">langue</hi> è una convenzione sociale, che consente agli individui sociali di comunicare tra di loro e si contrappone alla parole.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="formes" xml:lang="fr">formes</term>
+              <term ref="#formes" xml:lang="it">forme</term>
+            </label>
+            <item>
+              <gloss target="#formes" xml:lang="it" source="https://it.wikipedia.org/wiki/Forma#:~:text=La%20forma%20in%20linguistica%20analizza,caratteristiche%20stilistiche%20di%20un%20testo."> 
+                La <hi rend="bold">forma</hi> in <hi rend="bold">linguistica</hi> analizza il rapporto tra l'espressione comunicativa e la forma linguistica.
+              </gloss>
+            </item>
+
+            <label>
+              <term xml:id="création" xml:lang="fr">création</term>
+              <term ref="#création" xml:lang="it">creazione</term>
+            </label>
+            <item>
+              <gloss target="#création" xml:lang="it" source="https://dizionari.corriere.it/dizionario_italiano/C/creazione.shtml"> 
+                Atto con cui si forma qualcosa dal nulla, si dà vita a un essere.
+              </gloss>
+            </item>
+          </list>
+  
+          <!-- listOrganizations -->
+
+          <listOrg>
+            <org xml:id="UniversitàDiPisa">
+              <orgName ref="https://it.wikipedia.org/wiki/Universit%C3%A0_di_Pisa">University of Geneva</orgName>
+              <placeName ref="Pisa">Pisa</placeName>
+              <desc> <!-- contiene una breve descrizione dello scopo o dell'applicazione di un elemento, attributo o valore di attributo -->
+                L'Università di Pisa è un'Università pubblica situata a Pisa, in Italia.
+              </desc>
+            </org>
+          </listOrg>
+        </div>
+      </back>
+  </text>
+</TEI>
+              

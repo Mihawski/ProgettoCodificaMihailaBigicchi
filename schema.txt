@@ -1,0 +1,27 @@
+Innnanzitutto dobbiamo scegliere le prolusioni, capire poi se dobbamo fare codifica caroline o meno 
+
+Dobbiamo creare una pagina xml, una xsl, una pagina hrml (vedere poi se inserire JS), poi una pagina che dovrà essere definita tei_all.dtd e poi un foglio di stile CSS
+
+Iniziamo col documento xml almeno per avere una divisione specifica delle parti
+
+Andiamo ad aprire anzitutto il tag xml attraverso <?xml>
+
+Partiamo col definire un DOCTYPE TEI che permette di reindirizzare il tutto alla pagina dtd creata. Dopodiché inseriamo l'URL
+dello spazio dei nomi TEI (TEI xmlns)
+
+Partiamo poi con <teiHeader> che presenta una struttura ben precisa: lo tei HEADER è l'instestazione e ha cinque parti principali:
+1. descrizione del file (<fileDesc>) che contiene una descrizione completa bibliografica del file 
+2. descrizione di codifica (<endodingDesc) che descrive una relazione tra un testo elettronico e la sua sorgente o fonti. Consiste
+in una descrizione dettagliata di coem il testo è stato normalizzato durante la trascrizione 
+3. profilo di testo (<profileDesc>) che contiene informazioni classificatorie e contestuali sul testo 
+4. (<xenoDat>) che è un elemento contenitore che consente una condivisione semlificata di metadati da schemi non TEI 
+5. una cronologia delle revisioni (<revisionDesc>) che consente al codificatore di fornire una cronologia delle modifiche apportate
+durante lo sviluppo del testo elettronico 
+
+All'interno di tutto ciò andrà una descrizione ricca di ciò di cui si parla 
+
+<fileDesc>
+
+<titleStmt> --> raggruppa le info sul titolo di una opera e sui responsabilli del suo contenuto
+<title> --> titolo per qualsiai tipo di opera
+<editor> --> 

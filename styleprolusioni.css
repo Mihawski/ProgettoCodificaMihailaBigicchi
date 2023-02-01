@@ -1,0 +1,415 @@
+body {
+    background-color: #333333;
+    color: white;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-family: 'raleway';
+    font-size: 23px;
+    line-height: 20px;
+    
+}
+
+.contenitore {
+    max-width: 1786px;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+
+#navbar {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+#navbar ul {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #f5f5dc;
+    font-size: 20px;
+}
+
+h3 {
+    color: #f5f5dc;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 70px;
+}
+
+
+.traduzione {
+    line-height: 30px;
+}
+
+b {
+    color: palegoldenrod;
+}
+
+p, .containerStoria, .containerTerm, .containerLgenda, .containerBibliografia, .containerAbout {
+    text-align: left;
+    line-height:30px;
+}
+
+.containerStoria h3, .containerLgenda h3, .trascrizione h3, .traduzione h3, .containerBibliografia h3, .containerAbout h3, .containerTerm h3 {
+    text-align: center;
+}
+
+.container, .containerDescrizioneFisica, .containerStoria, .containerLgenda, .trascrizione, .traduzione, .containerBibliografia, .containerAbout, .containerTerm {
+    box-shadow: 0px 0px 20px #e5e9f6;
+    padding: 2%;
+    margin-bottom: 70px;
+}
+
+
+.containerTerm span {
+    color:red;
+    display: block;
+    text-align: left;
+    background: none;
+}
+
+.containerTerm span:nth-child(odd) {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.containerTerm span:nth-child(even) {
+    display: none;
+}
+
+.containerTerm {
+    max-height: 420px;
+    overflow-y: scroll;
+}
+
+.containerTerm::-webkit-scrollbar-track, ::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #333333;
+}
+
+.containerTerm::-webkit-scrollbar, ::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #333333;
+}
+
+.containerTerm::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: palegoldenrod;
+}
+
+
+
+
+#info2 img {
+    height: 305px;
+    width: 33%;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 16%);
+    margin-right: 40px;
+}
+
+#info2 img:hover {
+    cursor: pointer;
+    -webkit-filter: brightness(110%); 
+    height: 310px;
+    width: 34%;
+    transition: all .2s ease-in-out;
+}
+
+#info2 {
+    display: flex;
+    margin-right: -40px;
+    margin-bottom: 90px;
+}
+
+#frontepag20, #frontepag21 {
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 16%);
+}
+
+.cancellazioni{
+    text-decoration:line-through;
+    
+}
+
+#pulsanteTraduzione, #pulsanteTraduzione2 {
+    border-radius: 17px;
+    cursor: pointer;
+    background-color: #4468E2;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: none;
+    font-family: 'raleway';
+    height: 34px;
+    font-size: 18px;
+    margin-top: 0px;
+    width: 123px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+
+
+.abbreviazioni {
+    cursor: pointer;
+}
+
+
+.correzioni {
+    cursor:pointer;
+}
+
+.sic {
+    display: block;
+    display: inline-block;
+    cursor:pointer;
+}
+
+.corr {
+    color: blueviolet;
+    display: none;
+    cursor:pointer;
+}
+
+
+.trascrizione span {
+    line-height: 23px;
+}
+
+.contenitoreTrascrizioneImmagine {
+    display: flex;
+    justify-content: center;
+}
+
+.titolo {
+    text-align: center;
+}
+
+.containerLgenda {
+    text-align: center;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #f1f1f1;
+    color: #666;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 7px;
+    outline: none;
+    transition: 0.2s;
+    border: 1px solid #696969;
+  }
+  
+  input[type=checkbox]:checked::before {
+    position: absolute;
+    font: 13px/1 'Roboto', sans-serif;
+    left: 11px;
+    top: 7px;
+    content: '\02143';
+    transform: rotate(40deg);
+  }
+  
+  input[type=checkbox]:checked {
+    background-color: #f1f1f1;
+  }
+  
+  .legendaElementi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #giallo {
+    color: yellow;
+  }
+
+  #arancione {
+    color: cyan;
+  }
+
+  .aggiunte {
+    color: greenyellow;
+  }
+
+  .aggiunteAutore {
+    color: palevioletred;
+  }
+
+  .abbreviazionili {
+    color: red;
+  }
+
+  .cancellazioniGap {
+    color: coral;
+  }
+
+  .correzionili {
+    color: blueviolet;
+  }
+
+  .glottonimi {
+    color: lightblue;
+  }
+
+  .abbr, .espansioni {
+    color: red;
+    cursor:pointer;
+}
+
+.trascrizione {
+    line-height:15px;
+    text-align: left;
+    margin-left: 250px;
+    border-radius: 17px;
+    font-size: 16px;
+    padding: 1%;
+}
+
+
+.trascrizione b {
+    color: white;
+}
+
+#term:checked, #term:hover {
+    background-color: yellow;
+    transition: all .2s ease-in-out;
+}
+
+#esempioling:checked, #esempioling:hover {
+    background-color: cyan;
+    transition: all .2s ease-in-out;
+}
+
+#aggiuntecur:checked, #aggiuntecur:hover {
+    background-color: greenyellow;
+    transition: all .2s ease-in-out;
+}
+
+#aggiunteaut:checked, #aggiunteaut:hover {
+    background-color: palevioletred;
+    transition: all .2s ease-in-out;
+}
+
+#abbreviazioni:checked, #abbreviazioni:hover {
+    background-color: red;
+    transition: all .2s ease-in-out;
+}
+
+#cancellazioni:checked, #cancellazioni:hover {
+    background-color: coral;
+    transition: all .2s ease-in-out;
+}
+
+#correzioni:checked, #correzioni:hover {
+    background-color: blueviolet;
+    transition: all .2s ease-in-out;
+}
+
+#glottonimi:checked, #glottonimi:hover {
+    background-color: lightblue;
+    transition: all .2s ease-in-out;
+}
+
+@media screen and (max-width: 1400px) {
+    .trascrizione {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1255px) {
+
+    .contenitoreTrascrizioneImmagine {
+        display: block;
+    }
+
+    .img-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        display: flex;
+    }
+
+    .trascrizione {
+        width: 41%;
+        margin-top: 60px;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    #info2 img {
+        height: 250px;
+        width: 25%;
+    }
+
+    .trascrizione {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    #info2 {
+        display: block;
+    }
+
+    #info2 img {
+        width: 70%;
+        margin-bottom: 90px;
+    }
+
+    #info2 img:hover {
+        -webkit-transition-property: none;
+        -moz-transition-property: none;
+        -o-transition-property: none;
+        transition-property: none;
+        height: auto;
+        width: 70%;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .trascrizione {
+        width: 90%;
+    }
+
+    body {
+        font-size: 17px;
+    }
+}
